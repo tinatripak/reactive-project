@@ -1,14 +1,22 @@
 {
   "name": "wiki-project",
   "version": "1.0.0",
-  "description": "Hello back",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  },
   "dependencies": {
-    "rxjs": "^7.5.5"
+    "rxjs": "^6.5.2"
   }
 }
