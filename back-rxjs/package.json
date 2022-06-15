@@ -1,13 +1,13 @@
 {
   "name": "wiki-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "reactive Wiki",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -17,6 +17,8 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "rxjs": "^6.5.2"
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.6",
+    "rxjs": "^7.5.5"
   }
 }
