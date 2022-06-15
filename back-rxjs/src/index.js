@@ -9,6 +9,8 @@ const o = observableEventSource({
  
 console.log('recently changed npm packages...')
 
+var updateBuffer = makeDisplayBuffer(10);
+
 myMap(o).subscribe(response => {
     console.log(response)
     const html = `
@@ -16,7 +18,9 @@ myMap(o).subscribe(response => {
       <div style="float: left; margin-left: 10px;">${response.id}</div>
       <div style="float: left; margin-left: 10px;">${response.user}</div>
     `
-    result.insertAdjacentHTML('beforeend', html)
+    var node = document.createTextNode(response.comment + '\n\n');
+    result.prepend(node);
+    updateBuffer(node);
   })
 
 function myMap(o) {
@@ -26,3 +30,14 @@ function myMap(o) {
 
     return o;
 }
+
+function makeDisplayBuffer(size) {
+    var buffer = [];
+    return function (element) {
+      buffer.push(element);
+      if (buffer.length > size) {
+        var popped = buffer.shift();
+        popped.parentNode.removeChild(popped);
+      }
+    }
+  }
