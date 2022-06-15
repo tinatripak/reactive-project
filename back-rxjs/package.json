@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.18.1",
     "node-fetch": "^3.2.6",
+    "rx-dom": "^7.0.3",
     "rxjs": "^7.5.5"
   }
 }
