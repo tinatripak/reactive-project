@@ -1,1 +1,3 @@
-Hello back
+to run:
+npm install 
+npm start
