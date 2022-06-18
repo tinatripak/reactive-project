@@ -12,7 +12,7 @@ var searchUsers = []
 console.log('recently changed npm packages...')
 const search = document.getElementById('search')
 
-var updateBuffer = makeDisplayBuffer(10);
+var updateBuffer = makeDisplayBuffer(16);
 
 filter(o).subscribe(response => {
   if (searchUsers.includes(response.user)) {
