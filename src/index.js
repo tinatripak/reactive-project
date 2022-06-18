@@ -1,6 +1,6 @@
 import observableEventSource from 'observable-event-source';
 import { filter, makeDisplayBuffer } from "./track-realtime_activity/index.js";
-import { MongoClient } from 'mongodb';
+//const { MongoClient } = require('mongodb');
 var url = 'https://stream.wikimedia.org/v2/stream/recentchange';
 
 const o = observableEventSource({
@@ -9,7 +9,7 @@ const o = observableEventSource({
 })
 
 var searchUsers = []
- 
+var client = new MongoClient('mongodb://localhost:27017');
 console.log('recently changed npm packages...')
 const search = document.getElementById('search')
 
