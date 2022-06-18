@@ -1,5 +1,6 @@
 import observableEventSource from 'observable-event-source';
 import { filter, makeDisplayBuffer } from "./track-realtime_activity/index.js";
+import { MongoClient } from 'mongodb';
 var url = 'https://stream.wikimedia.org/v2/stream/recentchange';
 
 const o = observableEventSource({
