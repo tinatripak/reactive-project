@@ -4,6 +4,9 @@
   "description": "reactive-project",
   "main": "",
   "dependencies": {
+    "axios": "^0.27.2",
+    "db": "^3.3.1",
+    "mongo": "^0.1.0",
     "observable-event-source": "^1.0.1",
     "webpack": "^1.13.1"
   },
@@ -20,6 +23,7 @@
     "postcss-loader": "^0.9.1",
     "purecss": "^0.6.0",
     "purifycss-webpack-plugin": "^2.0.3",
+    "rxjs": "^7.5.5",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
