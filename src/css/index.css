@@ -14,7 +14,7 @@ img {
     border: none;
 }
 
-.banner {
+/* .banner {
 
     background: url(../img/banner-img.png) no-repeat center top;
     height: 210px;
@@ -22,16 +22,20 @@ img {
     display: block;
     overflow: hidden;
     clear: both;
-}
+} */
 
 .wrapper {
     position: relative;
-    width: 1200px;
+    width: 80%;
+    /* width: 1100px; */
     min-height: 100%;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
     background: #f0f0f0;
+    height: 75vh;
+    margin-top:100px;
+    box-shadow: 5px 5px 5px 5px rgba(89, 89, 89, 0.451);
 }
 
 .sidebar {
@@ -70,7 +74,7 @@ img {
     top: 12px;
     width: 4px;
     height: 20px;
-    background: #e94709;
+    background: #0911e976;
 }
 
 .sidebar .nav .has-sub a {
@@ -121,6 +125,8 @@ main {
 main.outline {
     border: solid 1px #c1c1c1;
     padding: 23px;
+    margin-right: 10px;
+    height: 73vh;
 }
 
 pre {
@@ -150,7 +156,7 @@ body{
 }
 
 #topics, #main{
-    width: 72%;
+    /* width: 72%; */
     margin-left: auto;
     margin-right: auto;
     padding: 1.5% 1.5% 1.5% 1.5%;
