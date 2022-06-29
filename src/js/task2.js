@@ -26,7 +26,10 @@ function initialize(params) {
       
     search.addEventListener('change', (event) => {
         searchUsers = search.value.split('|')
-        console.log(searchUsers)
+        while (result.firstChild) {
+            result.removeChild(result.lastChild);
+        }
+        updateBuffer = makeDisplayBuffer(11);
     });
 
     function filter(o) {

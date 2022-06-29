@@ -2,6 +2,7 @@
 
 function initialize(params) {
 
+    console.log(params);
     var url = 'https://stream.wikimedia.org/v2/stream/recentchange';
 
     const o = observableEventSource({
@@ -11,7 +12,7 @@ function initialize(params) {
     
     console.log('recently changed npm packages...')
 
-    var updateBuffer = makeDisplayBuffer(15);
+    var updateBuffer = makeDisplayBuffer(14);
 
     myMap(o).subscribe(response => {
         var node = document.createTextNode(response.title + '-' + response.user + '\n\n');
