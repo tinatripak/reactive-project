@@ -41,11 +41,21 @@ streamAlldata$.subscribe(value => {
     console.log(value);
 })
 
-stream$.subscribe(value => {
-    console.log(value);
+stream$.subscribe(el => {
+    console.log(el);
+    let titlesString =  '';
+    for (const [key, value] of new Map(Object.entries(el.user.title.type))) {
+        titlesString += `${key.toString()}: ${value.toString()}` + "\n";
+    }
+    let editsString = ""
+    for (const [key, value] of new Map(Object.entries(el.user.type.type))) {
+        editsString += `${key.toString()}: ${value.toString()}` + "\n";
+    }
     const html = `
-    <p>User: ${value.user.user}</p>
-    <p>Total Actions: ${value.totalActions}</p>
+    <p>User: ${el.user.user}</p>
+    <p>Total Actions Today: ${el.totalActions}</p>
+    <p>Actions: ${editsString}</p>
+    <p>Titles: ${titlesString}</p>
     `;
     result.insertAdjacentHTML('beforeend', html)
 })
