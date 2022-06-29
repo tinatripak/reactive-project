@@ -1,26 +1,35 @@
 {
-  "name": "wiki-project",
+  "name": "reactive",
   "version": "1.0.0",
-  "description": "reactive Wiki",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
-  },
+  "description": "reactive-project",
+  "main": "",
   "dependencies": {
-    "express": "^4.18.1",
-    "node-fetch": "^3.2.6",
     "observable-event-source": "^1.0.1",
-    "rx-dom": "^7.0.3",
-    "rxjs": "^7.5.5"
-  }
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "clean-webpack-plugin": "^0.1.9",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.17.0",
+    "open-browser-webpack-plugin": "0.0.2",
+    "postcss-loader": "^0.9.1",
+    "purecss": "^0.6.0",
+    "purifycss-webpack-plugin": "^2.0.3",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.14.0",
+    "webpack-validator": "^2.1.2"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server"
+  },
+  "author": "hsw",
+  "license": "ISC"
 }

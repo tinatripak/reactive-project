@@ -1,0 +1,27 @@
+<div id="container">
+    <div id="title">
+        <h1>The most active user during the (YEAR|MONTH|DAY)</h1>
+    </div>
+    <div id="main">
+        <div id="date">
+            <label for="date-range-options">Choose:</label>
+
+            <select name="date-range-options" id="date-range-options">
+                <option value="year">YEAR</option>
+                <option value="month">YEAR|MONTH</option>
+                <option value="day">YEAR|MONTH|DAY</option>
+            </select>
+        </div>
+        <div id="input-button">
+            <div style="display: flex">
+                <input type="text" id="year" placeholder="Year">
+                <input type="text" id="month" placeholder="Month">
+                <input type="text" id="day" placeholder="Day">
+            </div>
+            <button id="find" type="button">Find</button>
+        </div>
+        <div id="users">
+
+        </div>
+    </div>
+</div>
