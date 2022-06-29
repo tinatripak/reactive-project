@@ -11,7 +11,7 @@ function initialize(params) {
     
     console.log('recently changed npm packages...')
 
-    var updateBuffer = makeDisplayBuffer(10);
+    var updateBuffer = makeDisplayBuffer(15);
 
     myMap(o).subscribe(response => {
         var node = document.createTextNode(response.title + '-' + response.user + '\n\n');

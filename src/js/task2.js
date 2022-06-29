@@ -14,7 +14,7 @@ function initialize(params) {
     console.log('recently changed npm packages...')
     const search = document.getElementById('search')
 
-    var updateBuffer = makeDisplayBuffer(10);
+    var updateBuffer = makeDisplayBuffer(11);
 
     filter(o).subscribe(response => {
         if (searchUsers.length == 0 || searchUsers.includes(response.user)) {
