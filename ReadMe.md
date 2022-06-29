@@ -1,3 +1,13 @@
+to install:
+
+npm install
+cd mockServer
+npm install
+
 to run:
-npm install 
-npm start
+cd mockServer
+node ./mockServer/server.js
+
+OPEN a new one terminal
+
+npm run dev
