@@ -15,7 +15,7 @@ var Merge = require('webpack-merge');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 var PATHS = {
-    publicPath: '/webpackForSPA/dist/',
+    publicPath: '/reactive/dist/',
 
     libsPath: path.resolve(process.cwd(), './libs'),
 
