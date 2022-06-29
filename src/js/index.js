@@ -22,7 +22,7 @@ function initMenu() {
     modName = modName || pageDatas.defaultRoute;
 
 
-    $("ul[class=sub-menu] li a").each(function (e) {
+    $("ul[class=nav] li a").each(function (e) {
         if ('#' + modName === $(this).attr('href')) {
             $(this).addClass("active");
             $(this).parent().parent().show(300);
@@ -40,16 +40,16 @@ function bindMenu() {
     $(document).on('click', '.sidebar .nav .has-sub', function (e) {
         e.stopPropagation();
 
-        $(this).children(".sub-menu").toggle(300);
+        $(this).children(".nav").toggle(300);
     })
 
 
-    $("ul[class=sub-menu] li a").on('click', function (e) {
+    $("ul[class=nav] li a").on('click', function (e) {
         e.stopPropagation();
 
         if ($(this).hasClass("active")) { return false; }
 
-        $("ul[class=sub-menu] li a").removeClass("active");
+        $("ul[class=nav] li a").removeClass("active");
         $(this).addClass("active");
 
         var modName = $(this).attr('href');
